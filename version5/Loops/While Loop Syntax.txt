@@ -1,0 +1,9 @@
+java/kotlin/dart:
+while (condition) {
+    // Code to run
+}
+
+
+python:
+while condition:
+    # Code to run

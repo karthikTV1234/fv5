@@ -1,0 +1,18 @@
+java/dart:
+for (initialization; condition; increment) {
+    // Code to run
+}
+
+
+
+kotlin:
+for (item in collection) {
+    // Code to run
+}
+
+
+python:
+for item in collection:
+    # Code to run
+
+

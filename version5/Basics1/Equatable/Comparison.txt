@@ -1,0 +1,3 @@
+In Java, you override the equals() and hashCode() methods for value comparison.
+In Python, you override __eq__() and __hash__() methods for value comparison.
+In Kotlin, data classes automatically generate equals() and hashCode() methods. No need to write extra code!

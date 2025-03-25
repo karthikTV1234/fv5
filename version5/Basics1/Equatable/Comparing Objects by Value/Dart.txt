@@ -1,0 +1,18 @@
+import 'package:equatable/equatable.dart';
+
+class Person extends Equatable {
+  final String name;
+  final int age;
+
+  Person(this.name, this.age);
+
+  @override
+  List<Object?> get props => [name, age];
+}
+
+void main() {
+  var p1 = Person('Alice', 30);
+  var p2 = Person('Alice', 30);
+
+  print(p1 == p2);  // true ✅ (compares values, not memory)
+}

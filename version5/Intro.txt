@@ -1,0 +1,17 @@
+https://www.geeksforgeeks.org/difference-between-hot-reload-and-hot-restart-in-flutter/
+
+What is Hot Reload?
+Hot Reload is a feature in Flutter that allows you to quickly inject code changes into a running app without restarting the entire application.
+When to use: When you make UI changes, fix small logic issues, or add new widgets.
+
+To perform a Hot Reload:
+  1. In Visual Studio Code: Press r in the terminal or click the Hot Reload button in the debug toolbar.
+  2. In Android Studio: Click the Hot Reload button (a lightning bolt icon).
+
+Hot Restart:
+  1. What it does: Restarts the app and rebuilds everything from scratch.
+  2. When to use: When you make changes to global variables, app initialization, main() function, or when the app behaves oddly after multiple hot reloads.
+
+To perform a Hot Restart:
+  1. In Visual Studio Code: Press Shift + R in the terminal or click the Hot Restart button.
+  2. In Android Studio: Click the Hot Restart button (a circular arrow icon).

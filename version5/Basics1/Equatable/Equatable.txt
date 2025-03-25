@@ -1,0 +1,18 @@
+Equatable
+https://bytestocode.medium.com/using-equatable-in-flutter-87106d566395
+
+What is Equatable?
+Equatable is a Dart package that makes it easy to compare objects by their values instead of their memory addresses.
+
+Why Use Equatable?
+
+Without Equatable:
+1. In Dart, two objects are considered equal only if they point to the same memory location. 
+2. Even if two objects have the same data, they are treated as different:
+
+
+With Equatable:
+
+Real Use Cases:
+1.  State Management with BLoC (Prevent Unnecessary Rebuilds)
+2. Comparing API Responses
