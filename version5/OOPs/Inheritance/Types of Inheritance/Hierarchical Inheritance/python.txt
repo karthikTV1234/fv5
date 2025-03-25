@@ -1,0 +1,48 @@
+Syntax:
+class Parent:
+    pass
+
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
+
+
+
+# Parent Class: Animal
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    # Common Method: Show name
+    def show_name(self):
+        print(f'Animal: {self.name}')
+
+
+# Child Class 1: Dog inherits from Animal
+class Dog(Animal):
+    # Unique Method: Bark
+    def bark(self):
+        print(f'{self.name} is barking 🐶')
+
+
+# Child Class 2: Cat inherits from Animal
+class Cat(Animal):
+    # Unique Method: Meow
+    def meow(self):
+        print(f'{self.name} is meowing 🐱')
+
+
+# Main Program
+# Create Dog object
+dog = Dog('Buddy')
+dog.show_name()  # Inherited from Animal
+dog.bark()       # Dog's unique method
+
+print()  # Line break
+
+# Create Cat object
+cat = Cat('Whiskers')
+cat.show_name()  # Inherited from Animal
+cat.meow()       # Cat's unique method

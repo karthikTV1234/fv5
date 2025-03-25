@@ -1,0 +1,27 @@
+Kotlin:
+1. Use abstract keyword for classes and methods.
+2. Abstract classes can have properties and concrete methods.
+
+
+// Abstract Class
+abstract class Animal {
+    abstract fun makeSound()  // Abstract Method
+
+    fun sleep() {  // Concrete Method
+        println("Sleeping...")
+    }
+}
+
+// Concrete Class
+class Dog : Animal() {
+    override fun makeSound() {
+        println("Bark")
+    }
+}
+
+// Usage
+fun main() {
+    val myDog: Animal = Dog()
+    myDog.makeSound()  // Output: Bark
+    myDog.sleep()      // Output: Sleeping...
+}

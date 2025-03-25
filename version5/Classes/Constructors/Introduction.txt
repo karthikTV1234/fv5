@@ -1,0 +1,22 @@
+1. The constructor has the same name as the class.
+2. The constructor doesn’t have a return type.
+3. A constructor is automatically called when the object is created.
+4. If we don’t specify a constructor, the default no-argument constructor will be created.
+
+Summary:
+✅ Points 2, 3, and 4 are valid for all four languages.
+❌ Point 1 is only valid for Java; Kotlin, Dart, and Python handle it differently.
+
+
+What If i need multiple constructors?
+if you need multiple constructors, the concept of constructor overloading comes into play.
+Java — Supports Constructor Overloading ✅
+  1. you can create multiple constructors with different parameter lists. 
+  2. The constructor that matches the arguments will be called.
+Kotlin — Supports Primary and Secondary Constructors ✅
+  1. you use a primary constructor and can add secondary constructors for overloading.
+Dart — Supports Named Constructors ✅
+  1. Dart doesn't support multiple constructors with the same name.
+  2. you can create named constructors to achieve overloading.
+Python — Doesnt support Constructor Overloading ❌
+  1. Use default arguments or @classmethod factory methods to handle multiple ways of creating objects.

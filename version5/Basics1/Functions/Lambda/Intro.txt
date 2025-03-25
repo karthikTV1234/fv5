@@ -1,0 +1,3 @@
+What is a Lambda Function?
+A lambda function is a short, anonymous function — meaning it doesn't need a name. 
+It’s mostly used for simple operations, especially when passing functions as arguments.

@@ -1,0 +1,26 @@
+In Dart, we use a factory constructor for JSON conversion.
+Let’s understand why Dart uses it and why other languages don’t need it.
+Example:
+class Fruit {
+  final int id;
+  final String name;
+  final double price;
+
+  // Normal Constructor
+  Fruit({required this.id, required this.name, required this.price});
+
+  // Factory Constructor for JSON conversion
+  factory Fruit.fromJson(Map<String, dynamic> json) {
+    return Fruit(
+      id: json['id'],
+      name: json['name'],
+      price: (json['price'] as num).toDouble(),
+    );
+  }
+}
+
+
+⚙️ Other languages handle this differently:
+Java → Uses static methods.
+Kotlin → Uses companion objects.
+Python → Uses class methods.

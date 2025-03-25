@@ -1,0 +1,17 @@
+📝 Table of Contents:
+1. What are Constructors?
+2. Purpose of Constructors
+3. Types of Constructors
+   Default Constructor
+   Parameterized Constructor
+   Named Constructor (Dart-specific)
+   Factory Constructor (Dart-specific)
+   Secondary Constructor (Kotlin-specific)
+   Private Constructor (Java/Kotlin)
+4. Constructor Overloading (Java, Kotlin, Dart)
+5. Inheritance and Constructors
+6. Examples in Each Language
+
+
+1. What are Constructors?
+A constructor is a special method automatically called when an object is created.

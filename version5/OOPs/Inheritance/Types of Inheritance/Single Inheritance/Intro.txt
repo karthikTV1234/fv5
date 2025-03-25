@@ -1,0 +1,3 @@
+What is Single Inheritance?
+ 1. Single Inheritance means one child class inherits from one parent class.
+ 2. The child gets all the parent’s properties and methods without rewriting them.

@@ -1,0 +1,7 @@
+1. Grandmother writes a recipe book with many recipes. 🧁
+2. Mother inherits the recipe book:
+   1. She can use all the grandmother’s recipes.
+   2. She can also add new recipes of her own. 🍝
+3. Child inherit the book from your mother:
+   1. Child get all the recipes — from both your grandmother and mother.
+   2. Child can add your own recipes too! 🥤

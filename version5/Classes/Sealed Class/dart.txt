@@ -1,0 +1,3 @@
+sealed class Result {}
+class Success extends Result { final String data; Success(this.data); }
+class Error extends Result { final String message; Error(this.message); }

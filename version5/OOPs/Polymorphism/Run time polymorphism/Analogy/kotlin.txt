@@ -1,0 +1,39 @@
+// Parent Class
+open class Person {
+    open fun act() {
+        println("Person behaves in a general way.")
+    }
+}
+
+// Child Classes with their own behavior
+class Student : Person() {
+    override fun act() {
+        println("Behaves like a student at school.")
+    }
+}
+
+class Son : Person() {
+    override fun act() {
+        println("Behaves like a son at home.")
+    }
+}
+
+class Customer : Person() {
+    override fun act() {
+        println("Behaves like a customer in the mall.")
+    }
+}
+
+// Runtime Polymorphism in action
+fun main() {
+    var person: Person
+
+    person = Student()
+    person.act()  // Output: Behaves like a student at school.
+
+    person = Son()
+    person.act()  // Output: Behaves like a son at home.
+
+    person = Customer()
+    person.act()  // Output: Behaves like a customer in the mall.
+}

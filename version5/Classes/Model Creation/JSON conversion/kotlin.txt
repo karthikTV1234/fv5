@@ -1,0 +1,21 @@
+data class Fruit(val id: Int, val name: String, val price: Double) {
+    
+    // Companion object to hold factory methods
+    companion object {
+        fun fromJson(json: Map<String, Any?>): Fruit {
+            val id = json["id"] as? Int ?: 0
+            val name = json["name"] as? String ?: "Unknown"
+            val price = (json["price"] as? Number)?.toDouble() ?: 0.0
+            return Fruit(id, name, price)
+        }
+    }
+}
+
+
+Usage:
+fun main() {
+    val json = mapOf("id" to 1, "name" to "Banana", "price" to 50.0)
+    val banana = Fruit.fromJson(json)
+    println(banana)  // Fruit(id=1, name=Banana, price=50.0)
+}
+

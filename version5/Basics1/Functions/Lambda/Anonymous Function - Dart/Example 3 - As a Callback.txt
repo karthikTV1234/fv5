@@ -1,0 +1,24 @@
+🧠 What is a Callback?
+A callback is a function that you pass as an argument to another function.
+Later, that other function calls the callback when it finishes its task.
+It’s like giving your phone number to a friend — they call you back when they’re done.
+
+
+Syntax:
+Passing a Callback:
+void functionName(Function callback) {
+  // Do some work...
+  callback();  // Call the callback function
+}
+
+
+Passing Data to Callback:
+// Function that takes a callback with data
+void functionName(Function(ParameterType) callback) {
+  // Do some work and get a result
+  ParameterType result = ...;
+  
+  // Call the callback with the result
+  callback(result);
+}
+

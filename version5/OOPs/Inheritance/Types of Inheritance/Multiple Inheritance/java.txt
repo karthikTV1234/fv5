@@ -1,0 +1,54 @@
+In Java, multiple inheritance with classes is not allowed. This is because it can create ambiguity if two parent classes have methods with the same name. This problem is called the Diamond Problem.
+
+However, Java does support multiple inheritance with interfaces.
+ 1. A class can implement multiple interfaces.
+ 2. The child class must provide its own implementation for all methods from the interfaces.
+
+
+In Java:
+ 1. Multiple Inheritance with Classes is not allowed ❌.
+ 2. Multiple Inheritance with Interfaces is allowed ✅.
+
+// Parent Interface 1: Flyable (Animals that can fly)
+interface Flyable {
+    // Method: fly
+    void fly();
+}
+
+// Parent Interface 2: Swimmable (Animals that can swim)
+interface Swimmable {
+    // Method: swim
+    void swim();
+}
+
+// Child Class: Duck inherits from both Flyable and Swimmable
+class Duck implements Flyable, Swimmable {
+    String name;
+
+    // Constructor
+    Duck(String name) {
+        this.name = name;
+    }
+
+    // Implement fly() from Flyable
+    public void fly() {
+        System.out.println(name + " is flying in the sky! 🦆");
+    }
+
+    // Implement swim() from Swimmable
+    public void swim() {
+        System.out.println(name + " is swimming in the pond! 🌊");
+    }
+}
+
+// Main Class
+public class Main {
+    public static void main(String[] args) {
+        // Create Duck object
+        Duck duck = new Duck("Donald");
+
+        // Call both inherited methods
+        duck.fly();  // From Flyable
+        duck.swim(); // From Swimmable
+    }
+}

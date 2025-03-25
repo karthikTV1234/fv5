@@ -1,0 +1,3 @@
+In Hierarchical Inheritance:
+  1. One parent class is shared by multiple child classes.
+  2. Each child class inherits from the same parent but adds its own behavior.

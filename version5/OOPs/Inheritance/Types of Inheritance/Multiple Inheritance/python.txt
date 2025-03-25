@@ -1,0 +1,35 @@
+Syntax:
+class Parent1:
+    # Parent 1 Code
+
+class Parent2:
+    # Parent 2 Code
+
+class Child(Parent1, Parent2):
+    # Child Code
+
+
+1. Python does not have an interface keyword like Java or Kotlin.
+2. If parents have methods with the same name, Python follows the Method Resolution Order (MRO) to decide which one to call first.
+
+
+# Parent Class 1: Flyer
+class Flyer:
+    def fly(self):
+        print("Can fly in the sky! 🕊️")
+
+# Parent Class 2: Swimmer
+class Swimmer:
+    def swim(self):
+        print("Can swim in water! 🌊")
+
+# Child Class: Duck inherits from both Flyer and Swimmer
+class Duck(Flyer, Swimmer):
+    def quack(self):
+        print("Quack quack! 🦆")
+
+# Create an object of Duck
+duck = Duck()
+duck.fly()   # Inherited from Flyer
+duck.swim()  # Inherited from Swimmer
+duck.quack() # Defined in Duck

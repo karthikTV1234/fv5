@@ -1,0 +1,38 @@
+class Fruit {
+    private int id;
+    private String name;
+    private double price;
+
+    // Private constructor to force object creation through factory method
+    private Fruit(int id, String name, double price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+    }
+
+    // Factory method (static) to create Fruit from JSON-like data (Map)
+    public static Fruit fromJson(Map<String, Object> json) {
+        int id = (int) json.getOrDefault("id", 0);
+        String name = (String) json.getOrDefault("name", "Unknown");
+        double price = ((Number) json.getOrDefault("price", 0.0)).doubleValue();
+        return new Fruit(id, name, price);
+    }
+
+    @Override
+    public String toString() {
+        return "Fruit{id=" + id + ", name='" + name + "', price=" + price + '}';
+    }
+}
+
+
+
+Usage:
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Map<String, Object> json = Map.of("id", 1, "name", "Apple", "price", 100.0);
+        Fruit apple = Fruit.fromJson(json);
+        System.out.println(apple);  // Fruit{id=1, name='Apple', price=100.0}
+    }
+}

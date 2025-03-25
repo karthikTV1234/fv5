@@ -1,0 +1,22 @@
+Anonymous Function:
+1. A function which has no name is called Anonymous function.
+2. Uses {} for multiple lines.
+3. Uses {} or => for single line.
+4. UseCase: 
+   1. Used for temporary functions (e.g., callbacks, event handlers, passing functions as arguments).
+
+
+Anonymous functions are useful when you don’t need to reuse the function.
+They make the code shorter and cleaner for simple tasks.
+
+
+Syntax:
+Multiple Lines:
+(Parameter1, Parameter2, ...) {
+  // Function body (multiple lines)
+  // Do something...
+  return value;  // Optional
+}
+
+Single Line (With Arrow):
+(Parameter1, Parameter2, ...) => expression;

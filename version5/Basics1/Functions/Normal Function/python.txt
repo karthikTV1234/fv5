@@ -1,0 +1,16 @@
+def function_name(parameter1, parameter2):
+    # Function body
+    return value  # (optional, only if you want to return something)
+
+
+Example:
+def add(a, b):
+    return a + b
+
+# Call the function
+result = add(5, 3)
+print(result)  # Output: 8
+
+
+Note:  In Python, you don’t need to specify data types for parameters or return values. Python is a dynamically typed language, meaning the type is determined at runtime
+

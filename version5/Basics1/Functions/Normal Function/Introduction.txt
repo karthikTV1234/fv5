@@ -1,0 +1,5 @@
+📝 Why do we need Functions/Methods?
+Reusability: Write code once, use it multiple times.
+Modularity: Break complex code into smaller, manageable chunks.
+Maintainability: Easier to debug and modify.
+Readability: Improves code clarity and structure.

@@ -1,0 +1,41 @@
+// Parent Class: Animal
+open class Animal(val name: String) {
+
+    // Common Method: Show name
+    fun showName() {
+        println("Animal: $name")
+    }
+}
+
+// Child Class 1: Dog inherits from Animal
+class Dog(name: String) : Animal(name) {
+
+    // Unique Method: Bark
+    fun bark() {
+        println("$name is barking 🐶")
+    }
+}
+
+// Child Class 2: Cat inherits from Animal
+class Cat(name: String) : Animal(name) {
+
+    // Unique Method: Meow
+    fun meow() {
+        println("$name is meowing 🐱")
+    }
+}
+
+// Main Function
+fun main() {
+    // Create Dog object
+    val dog = Dog("Buddy")
+    dog.showName()  // Inherited from Animal
+    dog.bark()      // Dog's unique method
+
+    println()  // Line break
+
+    // Create Cat object
+    val cat = Cat("Whiskers")
+    cat.showName() // Inherited from Animal
+    cat.meow()     // Cat's unique method
+}

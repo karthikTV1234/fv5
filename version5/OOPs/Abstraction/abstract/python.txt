@@ -1,0 +1,38 @@
+In Python, abstraction is done using a special module called abc (Abstract Base Classes).
+1. Import the abc module.
+2. Create an abstract class by inheriting from ABC (Abstract Base Class).
+3. Mark abstract methods using the @abstractmethod decorator.
+4. You cannot create objects of abstract classes.
+5. Child classes must implement the abstract methods, or Python will raise an error.
+
+
+# Step 1: Import ABC and abstractmethod
+from abc import ABC, abstractmethod
+
+# Step 2: Create an abstract class
+class Animal(ABC):  # Inherit from ABC to make it abstract
+    
+    # Step 3: Abstract method (no body, just declaration)
+    @abstractmethod
+    def make_sound(self):
+        pass  # No implementation here
+
+    # Step 4: Concrete method (has a body)
+    def sleep(self):
+        print("Sleeping...")
+
+# Step 5: Create a concrete class that inherits from Animal
+class Dog(Animal):
+    
+    # Must implement the abstract method
+    def make_sound(self):
+        print("Bark")
+
+# Step 6: Usage
+my_dog = Dog()      # ✅ Works: Dog implements all abstract methods
+my_dog.make_sound() # Output: Bark
+my_dog.sleep()      # Output: Sleeping...
+
+# Trying to create an object of Animal will give an error:
+# my_animal = Animal()  # ❌ Error: Can't instantiate abstract class
+

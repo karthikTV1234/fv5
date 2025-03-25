@@ -1,0 +1,7 @@
+Dart does not support method overloading.
+
+Why does dart not allow method overloading?
+
+what is the recommended alternative?
+1. You can use different names.
+2. Use Optional Parameters

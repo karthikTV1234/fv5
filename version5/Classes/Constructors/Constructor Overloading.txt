@@ -1,0 +1,3 @@
+4. 🔄 Constructor Overloading
+Java/Kotlin/Dart: Supports multiple constructors with different parameters.
+Python: No direct overloading, but you can use default parameter values or @classmethod for alternate constructors.

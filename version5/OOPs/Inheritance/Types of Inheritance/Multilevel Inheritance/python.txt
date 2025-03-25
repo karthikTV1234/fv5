@@ -1,0 +1,39 @@
+Syntax:
+class Grandparent:
+    pass
+
+class Parent(Grandparent):
+    pass
+
+class Child(Parent):
+    pass
+
+
+
+# Grandparent Class
+class Animal:
+    # Method to show that animals can eat
+    def eat(self):
+        print("Animal is eating")
+
+# Parent Class inherits from Animal
+class Dog(Animal):
+    # Method to show that dogs can bark
+    def bark(self):
+        print("Dog is barking")
+
+# Child Class inherits from Dog
+class Puppy(Dog):
+    # Method to show that puppies can cry
+    def cry(self):
+        print("Puppy is crying")
+
+# Main code to run the program
+if __name__ == "__main__":
+    # Creating an object of Puppy
+    puppy = Puppy()
+    
+    # Call methods from all levels of inheritance
+    puppy.eat()  # Inherited from Animal
+    puppy.bark() # Inherited from Dog
+    puppy.cry()  # Puppy’s own method

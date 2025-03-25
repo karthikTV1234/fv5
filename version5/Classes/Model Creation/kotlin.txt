@@ -1,0 +1,13 @@
+data class Fruit(
+    val id: Int,
+    val name: String,
+    val price: Double
+)
+✅ Pros: Super concise, automatic toString(), equals(), hashCode(), and copy() functions.
+❌ Cons: Less control over getters/setters (unless explicitly added).
+
+Usage:
+fun main() {
+    val apple = Fruit(1, "Apple", 100.0)
+    println(apple)  // Output: Fruit(id=1, name=Apple, price=100.0)
+}

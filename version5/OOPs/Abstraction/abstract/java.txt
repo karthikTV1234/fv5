@@ -1,0 +1,29 @@
+Java:
+1. Use the abstract keyword - class, method
+2. Abstract classes can have both abstract methods (no body) and concrete methods (with implementation).
+
+// Abstract Class
+abstract class Animal {
+    abstract void makeSound();  // Abstract Method (no body)
+
+    void sleep() {  // Concrete Method (has body)
+        System.out.println("Sleeping...");
+    }
+}
+
+// Concrete Class
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Bark");
+    }
+}
+
+// Usage
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.makeSound();  // Output: Bark
+        myDog.sleep();      // Output: Sleeping...
+    }
+}

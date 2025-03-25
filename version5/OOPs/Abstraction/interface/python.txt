@@ -1,0 +1,27 @@
+In Python, the abc (Abstract Base Classes) module is used for both abstraction and interfaces.
+
+Interface Example:
+from abc import ABC, abstractmethod
+
+# Interface (only abstract methods, no concrete methods)
+class Animal(ABC):
+    @abstractmethod
+    def make_sound(self):
+        pass
+    
+    @abstractmethod
+    def move(self):
+        pass
+
+# Implementing the interface
+class Dog(Animal):
+    def make_sound(self):
+        print("Bark")
+    
+    def move(self):
+        print("Running...")
+
+# Usage
+dog = Dog()
+dog.make_sound()  # Output: Bark
+dog.move()        # Output: Running...

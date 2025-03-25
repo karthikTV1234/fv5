@@ -1,0 +1,13 @@
+Java
+  1. Use private fields.
+  2. Provide public getters and setters to access them.
+
+
+Dart
+  1. Use private fields with an underscore (_).
+  2. Create getters and setters.
+
+
+Python
+  1. Use private fields with a double underscore (__).
+  2. Provide getter and setter methods.

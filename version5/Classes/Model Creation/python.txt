@@ -1,0 +1,14 @@
+class Fruit:
+    def __init__(self, id: int, name: str, price: float):
+        self.id = id
+        self.name = name
+        self.price = price
+
+    def __repr__(self):
+        return f"Fruit(id={self.id}, name='{self.name}', price={self.price})"
+
+
+Usage:
+apple = Fruit(1, "Apple", 100.0)
+print(apple)  # Output: Fruit(id=1, name='Apple', price=100.0)
+

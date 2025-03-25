@@ -1,0 +1,23 @@
+Syntax:
+class Parent:
+    pass
+
+class Child(Parent):
+    pass
+
+
+
+# Parent class
+class Animal:
+    def eat(self):
+        print("Animal is eating")
+
+# Child class inherits from Animal
+class Dog(Animal):
+    def bark(self):
+        print("Dog is barking")
+
+# Create object of Dog
+dog = Dog()
+dog.eat()  # Inherited from Animal
+dog.bark() # Dog's own method

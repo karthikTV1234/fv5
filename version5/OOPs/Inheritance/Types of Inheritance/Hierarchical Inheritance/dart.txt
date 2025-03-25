@@ -1,0 +1,48 @@
+// Parent Class: Animal
+class Animal {
+  String name;
+
+  // Constructor
+  Animal(this.name);
+
+  // Common Method: Show name
+  void showName() {
+    print('Animal: $name');
+  }
+}
+
+// Child Class 1: Dog inherits from Animal
+class Dog extends Animal {
+  // Constructor
+  Dog(String name) : super(name);
+
+  // Unique Method: Bark
+  void bark() {
+    print('$name is barking 🐶');
+  }
+}
+
+// Child Class 2: Cat inherits from Animal
+class Cat extends Animal {
+  // Constructor
+  Cat(String name) : super(name);
+
+  // Unique Method: Meow
+  void meow() {
+    print('$name is meowing 🐱');
+  }
+}
+
+void main() {
+  // Create Dog object
+  Dog dog = Dog('Buddy');
+  dog.showName();  // Inherited from Animal
+  dog.bark();      // Dog's unique method
+
+  print('');  // Line break
+
+  // Create Cat object
+  Cat cat = Cat('Whiskers');
+  cat.showName(); // Inherited from Animal
+  cat.meow();     // Cat's unique method
+}

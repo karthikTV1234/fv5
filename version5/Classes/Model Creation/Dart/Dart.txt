@@ -1,0 +1,17 @@
+class Fruit {
+  final int id;
+  final String name;
+  final double price;
+
+  // Constructor with required fields
+  Fruit({required this.id, required this.name, required this.price});
+}
+
+final: Makes fields immutable (good for data models).
+required: Ensures id, name, and price must be provided when creating an object.
+
+Creating an instance:
+void main() {
+  var apple = Fruit(id: 1, name: 'Apple', price: 100.0);
+  print(apple.name);  // Output: Apple
+}

@@ -1,0 +1,20 @@
+Example 1: Storing an Anonymous Function in a Variable
+Multiple Lines:
+void main() {
+  // Anonymous function assigned to a variable
+  var add = (int a, int b) {
+    int sum = a + b;
+    return sum;
+  };
+
+  print(add(3, 5));  // Output: 8
+}
+
+
+Single Line (Arrow Function):
+void main() {
+  // Single-line anonymous function
+  var multiply = (int a, int b) => a * b;
+
+  print(multiply(4, 5));  // Output: 20
+}

@@ -1,0 +1,5 @@
+Language	Factory Pattern Approach
+Dart	        factory constructor.
+Java	        static factory methods.
+Kotlin	        companion object with factory methods.
+Python	        @classmethod as a factory method.

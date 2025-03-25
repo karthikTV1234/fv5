@@ -1,0 +1,38 @@
+1. Inheritance means creating a new class from an existing class.
+   1. The existing class is called the Parent (or Base or Super) class.
+   2. The new class is called the Child (or Derived or Sub) class.
+
+2. The child class inherits the properties (variables) and behaviors (methods) of the parent class.
+3. This helps us reuse code and avoid writing the same logic again.
+
+
+
+Syntax:
+Java, Dart
+class Parent {
+    // Parent properties and methods
+}
+
+class Child extends Parent {
+    // Child properties and methods
+}
+
+
+kotlin:
+open class Parent {
+    // Parent properties and methods
+}
+
+class Child : Parent() {
+    // Child properties and methods
+}
+
+
+python:
+class Parent:
+    # Parent properties and methods
+    pass
+
+class Child(Parent):
+    # Child properties and methods
+    pass

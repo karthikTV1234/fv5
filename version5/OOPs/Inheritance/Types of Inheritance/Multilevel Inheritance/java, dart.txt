@@ -1,0 +1,50 @@
+// Grandparent Class
+class Animal {
+    // Method to show that animals can eat
+    void eat() {
+        System.out.println("Animal is eating"); //java
+        print("Animal is eating"); //dart
+    }
+}
+
+// Parent Class inherits from Animal
+class Dog extends Animal {
+    // Method to show that dogs can bark
+    void bark() {
+        System.out.println("Dog is barking"); //java
+        print("Dog is barking"); //dart
+    }
+}
+
+// Child Class inherits from Dog
+class Puppy extends Dog {
+    // Method to show that puppies can cry
+    void cry() {
+        System.out.println("Puppy is crying"); //java
+        print("Puppy is crying"); //dart
+    }
+}
+
+// Java Test Class with the main method to run the program
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of Puppy
+        Puppy puppy = new Puppy();
+        
+        // Call methods from all levels of inheritance
+        puppy.eat();  // Inherited from Animal
+        puppy.bark(); // Inherited from Dog
+        puppy.cry();  // Puppy’s own method
+    }
+}
+
+// Dart Main function to run the program
+void main() {
+  // Creating an object of Puppy
+  var puppy = Puppy();
+
+  // Call methods from all levels of inheritance
+  puppy.eat();  // Inherited from Animal
+  puppy.bark(); // Inherited from Dog
+  puppy.cry();  // Puppy’s own method
+}

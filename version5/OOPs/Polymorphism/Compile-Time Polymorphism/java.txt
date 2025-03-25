@@ -1,0 +1,28 @@
+class Phone {
+
+    // Unlock using Face Recognition
+    void unlock(String faceData) {
+        System.out.println("Phone unlocked using Face Recognition.");
+    }
+
+    // Unlock using Fingerprint
+    void unlock(int fingerprintData) {
+        System.out.println("Phone unlocked using Fingerprint.");
+    }
+
+    // Unlock using PIN
+    void unlock(String pin, boolean isPin) {
+        System.out.println("Phone unlocked using PIN.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Phone phone = new Phone();
+
+        // Unlock the phone in different ways
+        phone.unlock("face123");   // Phone unlocked using Face Recognition.
+        phone.unlock(123456);      // Phone unlocked using Fingerprint.
+        phone.unlock("1234", true); // Phone unlocked using PIN.
+    }
+}

@@ -1,0 +1,41 @@
+class Fruit {
+  final int id;
+  final String name;
+  final double price;
+
+  // Constructor
+  Fruit({required this.id, required this.name, required this.price});
+
+  // From JSON (Factory Constructor)
+  factory Fruit.fromJson(Map<String, dynamic> json) {
+    return Fruit(
+      id: json['id'],
+      name: json['name'],
+      price: json['price'].toDouble(), // Ensures double type
+    );
+  }
+
+  // To JSON
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'price': price,
+    };
+  }
+}
+
+
+
+Usage:
+void main() {
+  // JSON String -> Dart Object
+  var json = {'id': 1, 'name': 'Apple', 'price': 100.0};
+  var apple = Fruit.fromJson(json);
+  print(apple.name);  // Apple
+
+  // Dart Object -> JSON String
+  var appleJson = apple.toJson();
+  print(appleJson);  // {id: 1, name: Apple, price: 100.0}
+}
+

@@ -1,0 +1,12 @@
+fun functionName(parameter1: Type, parameter2: Type): ReturnType {
+    // Function body
+    return value  // (optional, only if ReturnType is not Unit)
+}
+
+Example:
+fun add(a: Int, b: Int): Int {
+    return a + b
+}
+
+1. Use fun keyword to declare functions.
+2. Return type is specified after :. Use Unit if no value is returned (similar to void in other languages).

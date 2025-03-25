@@ -1,0 +1,40 @@
+
+// Parent Class 1: Flyable (Animals that can fly)
+mixin Flyable {
+  // Method: fly
+  void fly() {
+    print("Flying in the sky! 🦆");
+  }
+}
+
+// Parent Class 2: Swimmable (Animals that can swim)
+mixin Swimmable {
+  // Method: swim
+  void swim() {
+    print("Swimming in the pond! 🌊");
+  }
+}
+
+// Child Class: Duck inherits from both Flyable and Swimmable
+class Duck with Flyable, Swimmable {
+  String name;
+
+  // Constructor
+  Duck(this.name);
+
+  // Method to introduce the duck
+  void introduce() {
+    print("Hi, I'm $name!");
+  }
+}
+
+// Main function
+void main() {
+  // Create Duck object
+  Duck donald = Duck("Donald");
+
+  // Call methods from both parent classes
+  donald.introduce();
+  donald.fly();  // From Flyable
+  donald.swim(); // From Swimmable
+}

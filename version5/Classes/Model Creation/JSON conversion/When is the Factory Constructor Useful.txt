@@ -1,0 +1,23 @@
+1. Type Conversion:
+If your JSON has mixed types (e.g., int vs double), you might need to convert types before creating the object.
+2. Handling Optional/Nullable Fields:
+If your JSON doesn’t always include certain fields, a factory constructor lets you handle missing or default values.
+3. Converting Map (DB Row) to Object
+sqflite returns data as a Map<String, dynamic>, so you need a way to convert that into a Dart object.
+
+
+Syntax:
+// Factory constructor
+  factory ClassName.fromJson(Map<String, dynamic> json) {
+    // Create and return an instance of the class
+    return ClassName(
+      id: json['id'] ?? 0,
+      name: json['name'] ?? 'Unknown',
+    );
+  }
+
+
+1. The factory keyword tells Dart that this constructor does not always create a new instance of the class.
+Instead, it can:
+   1. Return an existing instance (useful for singletons or caching).
+   2. Perform additional logic before creating the object, like converting from JSON or handling errors.

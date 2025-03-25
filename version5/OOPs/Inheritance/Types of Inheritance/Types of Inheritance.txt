@@ -1,0 +1,20 @@
+Types of Inheritance:
+1. Single Inheritance(Supported in all languages)
+✅ Supported: Java, Kotlin, Dart, Python.
+
+
+2. Multilevel Inheritance(Supported in all languages)
+✅ Supported: Java, Kotlin, Dart, Python
+
+3. Hierarchical Inheritance(Supported in all languages)
+✅ Supported: Java, Kotlin, Dart, Python
+
+4. Multiple Inheritance (Not supported in Java, Kotlin, Dart)
+One Child → Many Parents
+✅ Supported: Python
+❌ Not Supported: Java, Kotlin, Dart
+
+5. Hybrid Inheritance (Only in Python)
+Combination of multiple types of inheritance.
+✅ Supported: Python (with the super() function).
+❌ Not Supported: Java, Kotlin, Dart

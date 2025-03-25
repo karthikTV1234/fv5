@@ -1,0 +1,10 @@
+Compile-Time Polymorphism (Static Polymorphism)/Method Overloading/Operator Overloading:
+1. This type of polymorphism is resolved at compile time.
+2. In method overloading, multiple methods have the same name but different parameters. 
+3. The compiler decides which method to call based on the arguments.
+
+
+✅ Why is this Compile-time Polymorphism?
+The method name is always unlock(), but the parameters are different.
+The correct method is determined at compile time based on the arguments you pass.
+This is called Method Overloading.

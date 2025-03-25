@@ -1,0 +1,3 @@
+Java allows Hybrid Inheritance using:
+  1. One Parent Class + Multiple Interfaces.
+  2. A class can extend one class and implement multiple interfaces.

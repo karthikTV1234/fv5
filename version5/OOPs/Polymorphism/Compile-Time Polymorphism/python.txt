@@ -1,0 +1,2 @@
+python doesnt not support method overloading.
+However, Python achieves similar functionality through default arguments and variable-length arguments.

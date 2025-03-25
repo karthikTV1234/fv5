@@ -1,0 +1,1 @@
+In Dart, the abstract keyword is used for both abstraction and interfaces.

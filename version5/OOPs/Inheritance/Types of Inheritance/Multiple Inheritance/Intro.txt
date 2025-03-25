@@ -1,0 +1,4 @@
+📝 What is Multiple Inheritance?
+ 1. In Multiple Inheritance, a child class inherits from more than one parent class.
+ 2. The child gets all the properties and methods from multiple parents.
+ 3. Think of a child who learns music from one parent and sports from another — the child inherits both skills! 🎵⚽

@@ -1,0 +1,23 @@
+class Fruit:
+    def __init__(self, id: int, name: str, price: float):
+        self.id = id
+        self.name = name
+        self.price = price
+
+    # Factory method (class method)
+    @classmethod
+    def from_json(cls, json: dict):
+        id = json.get('id', 0)
+        name = json.get('name', 'Unknown')
+        price = float(json.get('price', 0.0))
+        return cls(id, name, price)
+
+    def __str__(self):
+        return f'Fruit(id={self.id}, name="{self.name}", price={self.price})'
+
+
+Usage:
+# Example usage
+json_data = {'id': 1, 'name': 'Orange', 'price': 75.0}
+orange = Fruit.from_json(json_data)
+print(orange)  # Fruit(id=1, name="Orange", price=75.0)

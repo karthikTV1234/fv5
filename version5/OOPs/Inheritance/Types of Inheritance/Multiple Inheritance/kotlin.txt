@@ -1,0 +1,40 @@
+In Kotlin:
+ 1. Multiple Inheritance with Classes is not allowed ❌.
+ 2. Multiple Inheritance with Interfaces is allowed ✅.
+
+
+// Parent Interface 1: Flyable (Animals that can fly)
+interface Flyable {
+    // Method: fly
+    fun fly()
+}
+
+// Parent Interface 2: Swimmable (Animals that can swim)
+interface Swimmable {
+    // Method: swim
+    fun swim()
+}
+
+// Child Class: Duck inherits from both Flyable and Swimmable
+class Duck(private val name: String) : Flyable, Swimmable {
+
+    // Implement fly() from Flyable
+    override fun fly() {
+        println("$name is flying in the sky! 🦆")
+    }
+
+    // Implement swim() from Swimmable
+    override fun swim() {
+        println("$name is swimming in the pond! 🌊")
+    }
+}
+
+// Main function to run the code
+fun main() {
+    // Create Duck object
+    val duck = Duck("Donald")
+
+    // Call both inherited methods
+    duck.fly()  // From Flyable
+    duck.swim() // From Swimmable
+}

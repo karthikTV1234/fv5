@@ -1,0 +1,11 @@
+https://medium.com/@mohitarora7272/mixins-in-flutter-dart-a-complete-guide-e40ae546970a
+
+
+
+What are Mixins?
+1. Mixins are a way to reuse code across multiple classes without using inheritance.
+2. They let you add functionality to classes without creating parent-child relationships.
+
+
+Why Use Mixins?
+  Dart does not support multiple inheritance, but mixins offer a similar mechanism.

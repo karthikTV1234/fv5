@@ -1,0 +1,12 @@
+Functions  
+   - Function Declaration  
+   - Parameters  
+      - Required Parameters  
+      - Optional Positional Parameters  
+      - Optional Named Parameters  
+      - Default Values  
+   - Return Types  
+   - Anonymous Functions (Lambdas)  
+   - Arrow Functions (Short Syntax)  
+   - Higher-Order Functions  
+   - Closures  

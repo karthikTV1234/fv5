@@ -1,0 +1,26 @@
+class Phone {
+
+    // Unlock using Face Recognition
+    fun unlock(faceData: String) {
+        println("Phone unlocked using Face Recognition.")
+    }
+
+    // Unlock using Fingerprint
+    fun unlock(fingerprintData: Int) {
+        println("Phone unlocked using Fingerprint.")
+    }
+
+    // Unlock using PIN
+    fun unlock(pin: String, isPin: Boolean) {
+        println("Phone unlocked using PIN.")
+    }
+}
+
+fun main() {
+    val phone = Phone()
+
+    // Unlock the phone in different ways
+    phone.unlock("face123")    // Phone unlocked using Face Recognition.
+    phone.unlock(123456)       // Phone unlocked using Fingerprint.
+    phone.unlock("1234", true) // Phone unlocked using PIN.
+}

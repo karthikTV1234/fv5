@@ -1,0 +1,27 @@
+Defining Mixins:
+In Dart, you define a mixin using the mixin keyword.
+
+mixin MixinExample {
+  // Add methods and properties here
+}
+
+
+Using Mixins in a Class:
+  Once you’ve defined a mixin, you can apply it to any class using the with keyword.
+
+Syntax:
+class ClassName with MixinName {
+  // Class body
+}
+
+Using Multiple Mixins:
+  You can apply multiple mixins by separating them with commas.
+  
+  Order Matters:
+     If multiple mixins have methods with the same name, the last applied mixin wins
+
+
+Rules for Mixins in Dart
+  1. No Constructors: Mixins cannot define constructors.
+  2. Multiple Mixins: You can mix in multiple mixins, separated by commas.
+  3. Order Matters: Later mixins override earlier ones if there are conflicts.

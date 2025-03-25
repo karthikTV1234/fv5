@@ -1,0 +1,6 @@
+Why do we use sealed classes?
+
+“For example, a Result sealed class can have only Success and Error. No other types can be added, ensuring all cases are handled properly.”
+
+
+For example, if you have a Result class that represents Success or Error, using a sealed class guarantees that only these two types are allowed.”

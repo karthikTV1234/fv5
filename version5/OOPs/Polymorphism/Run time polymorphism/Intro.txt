@@ -1,0 +1,16 @@
+Runtime Polymorphism (Dynamic Polymorphism)/Method Overriding:
+1. In method overriding, a child class provides its own implementation of a method defined in the parent class. 
+2. The method that gets called is determined at runtime.
+
+
+
+
+
+
+In programming, this is like having a base class called Person and different subclasses for each role — Student, Son, and Customer.
+
+
+Real Use Cases:
+1. Notifcations
+✅ Why use polymorphism?
+   Makes it easy to add new notification types.

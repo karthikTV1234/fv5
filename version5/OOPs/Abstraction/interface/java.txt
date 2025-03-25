@@ -1,0 +1,12 @@
+Java/Kotlin: Use the interface keyword.
+
+1. 🌐 Java
+  1. Use the interface keyword.
+  2. A class uses implements to follow the interface.
+  3. Interfaces only contain method declarations (Java 8+ allows default methods).
+
+
+2. 📱 Kotlin
+  1. Use interface keyword.
+  2. A class uses : InterfaceName to implement it.
+  3. Interfaces can have method bodies, known as default methods.

@@ -1,0 +1,20 @@
+// Parent class
+open class Animal {
+    fun eat() {
+        println("Animal is eating")
+    }
+}
+
+// Child class inherits from Animal
+class Dog : Animal() {
+    fun bark() {
+        println("Dog is barking")
+    }
+}
+
+// Main function
+fun main() {
+    val dog = Dog()
+    dog.eat()  // Inherited from Animal
+    dog.bark() // Dog's own method
+}

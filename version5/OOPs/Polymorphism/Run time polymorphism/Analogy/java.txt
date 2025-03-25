@@ -1,0 +1,44 @@
+// Parent Class
+class Person {
+    void act() {
+        System.out.println("Person behaves in a general way.");
+    }
+}
+
+// Child Classes with their own behavior
+class Student extends Person {
+    @Override
+    void act() {
+        System.out.println("Behaves like a student at school.");
+    }
+}
+
+class Son extends Person {
+    @Override
+    void act() {
+        System.out.println("Behaves like a son at home.");
+    }
+}
+
+class Customer extends Person {
+    @Override
+    void act() {
+        System.out.println("Behaves like a customer in the mall.");
+    }
+}
+
+// Runtime Polymorphism in action
+class Main {
+    public static void main(String[] args) {
+        Person person;
+
+        person = new Student();
+        person.act();  // Output: Behaves like a student at school.
+
+        person = new Son();
+        person.act();  // Output: Behaves like a son at home.
+
+        person = new Customer();
+        person.act();  // Output: Behaves like a customer in the mall.
+    }
+}

@@ -1,0 +1,11 @@
+Imagine a person who acts differently in different places:
+1. At school, the person behaves like a student.
+2. At home, the person behaves like a son.
+3. At a shopping mall, the person behaves like a customer.
+
+
+The person is like a parent class reference (common identity).
+The roles (student, son, customer) are like child classes that override the common behavior.
+The behavior is determined at runtime depending on the situation (context).
+
+

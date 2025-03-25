@@ -1,0 +1,27 @@
+Dart:
+1. abstract keyword only for classes.
+2. Methods without a body are treated as "abstract methods" automatically in abstract classes.
+
+// Abstract Class
+abstract class Animal {
+  void makeSound();  // Abstract Method
+
+  void sleep() {  // Concrete Method
+    print("Sleeping...");
+  }
+}
+
+// Concrete Class
+class Dog extends Animal {
+  @override
+  void makeSound() {
+    print("Bark");
+  }
+}
+
+// Usage
+void main() {
+  Animal myDog = Dog();
+  myDog.makeSound();  // Output: Bark
+  myDog.sleep();      // Output: Sleeping...
+}

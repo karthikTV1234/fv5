@@ -1,0 +1,8 @@
+Imagine a TV remote:
+  1. The internal circuit is hidden.
+  2. You only get buttons (like power, volume, and channel) to interact with it.
+  3. This prevents you from accidentally messing with the circuit.
+
+In programming, encapsulation works the same way:
+  1. Private fields/variables: Keep the data hidden.
+  2. Public methods: Control access to the data.

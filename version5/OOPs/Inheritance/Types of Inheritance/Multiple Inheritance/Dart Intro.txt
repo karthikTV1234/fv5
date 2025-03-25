@@ -1,0 +1,10 @@
+1. In Dart, there is no interface keyword like in Java or Kotlin.
+2. If you use extends:
+   1. Multiple inheritance with classes is NOT allowed.
+   2. A class can inherit from only one parent class.
+3. If you use implements:
+   1. Multiple inheritance with classes is allowed.
+   2. The child class must override all methods from the implemented classes.
+4. If you use Mixins (with):
+   1. Provides multiple inheritance behavior.
+   2. Allows a class to reuse methods from multiple mixins without needing to override anything.

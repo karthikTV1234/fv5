@@ -1,0 +1,11 @@
+What is Multilevel Inheritance?
+1. In Multilevel Inheritance, classes are organized in a chain where:
+   1. Child inherits from Parent.
+   2. Grandchild inherits from Child.
+   3. The last child in the chain gets all the methods from the parent and grandparent! 🚦
+
+
+🚦 Why use Multilevel Inheritance?
+1. Code Reusability: No need to rewrite what’s already inherited.
+2. Hierarchy: Organize classes from general to specific.
+3. Extensibility: Add new features at each level.

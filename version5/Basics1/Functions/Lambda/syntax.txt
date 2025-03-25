@@ -1,0 +1,29 @@
+Java:
+(parameters) -> expression
+
+Kotlin:
+{ parameters -> expression }
+
+
+Dart:
+(parameters) {
+// Function body
+}
+
+// Or for a single expression
+(parameters) => expression;
+(void parameter) => expression;
+ReturnType functionName(ParameterType parameter) => expression;
+
+Dart doesn’t have a "lambda" keyword or concept explicitly like Python, Java, or Kotlin. 
+But Dart’s arrow functions serve the same purpose as lambdas in other languages.
+
+In Dart, you achieve this with:
+ 1. Arrow Functions (=>) for one-liners.
+ 2. Anonymous Functions for multi-line logic.
+Arrow Functions: Use => for single expressions.
+Anonymous Functions: Use {} when more logic is needed.
+
+
+Python:
+lambda parameters: expression

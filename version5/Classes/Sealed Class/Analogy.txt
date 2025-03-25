@@ -1,0 +1,22 @@
+Imagine a TV remote.
+A TV remote has only a few fixed actions:
+
+ 1. Turn On
+ 2. Turn Off
+ 3. Increase Volume
+ 4. Decrease Volume
+
+You don’t want anyone to add random actions like Make Coffee or Fly to Mars.
+You only want the four valid actions.
+
+✅ Sealed classes help you do that!
+
+With a sealed class, you can say:
+  1. "Only these actions are allowed!"
+  2. If someone tries to add a new action, the code will show an error.
+
+
+✅ Why use it?
+ 1. No invalid actions. You can’t add "Make Coffee" as an action.
+ 2. All actions are handled. If you forget to handle any action, the code gives a warning.
+ 3. Code is safer and easier to understand.

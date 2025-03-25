@@ -1,0 +1,41 @@
+https://medium.com/@millienakiganda/abstraction-in-object-oriented-programming-flutter-4da75b5cf30a
+
+
+What is Abstraction?
+It is the process of hiding implementation details and showing only functionality to the user.
+
+Why do we need an abstraction
+🎯 Why use Abstraction?
+Simplicity: Hides complex logic from the user.
+Flexibility: Makes code more modular and easier to maintain.
+Reusability: Abstract classes or interfaces can be reused across multiple classes.
+Enforcement: Ensures certain methods are implemented in child classes.
+
+
+When to Use Abstraction?
+When you want to create a template for other classes.
+When multiple classes should follow the same behavior but with different implementations.
+When you want to enforce a contract in child classes.
+
+⚙️ How is Abstraction implemented?
+It’s usually done with:
+Abstract Classes: Classes that can’t be instantiated directly. They act as blueprints.
+Interfaces/Protocols: Define a set of methods that implementing classes must follow.
+
+
+
+Achieve:
+Java, Kotlin -> using abstract classes and interfaces.
+Dart -> using abstract classes.
+Python -> using abstract base classes (ABC).
+
+Declaration(Syntax):
+abstract class class_name {
+  // Body of abstract class
+}
+Initialization
+Instantiation
+Inheritance
+
+Real use cases of Abstraction in Flutter?
+Real use cases of Abstraction in Kotlin?

@@ -1,0 +1,45 @@
+In Dart, runtime polymorphism is achieved through inheritance and method overriding
+
+// Parent Class
+class Person {
+  // Method to be overridden
+  void act() {
+    print("Person behaves in a general way.");
+  }
+}
+
+// Child Classes with their own behavior
+class Student extends Person {
+  @override
+  void act() {
+    print("Behaves like a student at school.");
+  }
+}
+
+class Son extends Person {
+  @override
+  void act() {
+    print("Behaves like a son at home.");
+  }
+}
+
+class Customer extends Person {
+  @override
+  void act() {
+    print("Behaves like a customer in the mall.");
+  }
+}
+
+// Runtime Polymorphism in action
+void main() {
+  Person person;
+
+  person = Student();
+  person.act();  // Output: Behaves like a student at school.
+
+  person = Son();
+  person.act();  // Output: Behaves like a son at home.
+
+  person = Customer();
+  person.act();  // Output: Behaves like a customer in the mall.
+}

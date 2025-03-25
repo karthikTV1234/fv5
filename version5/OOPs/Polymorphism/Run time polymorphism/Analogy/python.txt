@@ -1,0 +1,39 @@
+In Python, runtime polymorphism is achieved using inheritance and method overriding.
+
+# Parent Class
+class Person:
+    # Method to be overridden
+    def act(self):
+        print("Person behaves in a general way.")
+
+# Child Classes with their own behavior
+class Student(Person):
+    def act(self):
+        print("Behaves like a student at school.")
+
+class Son(Person):
+    def act(self):
+        print("Behaves like a son at home.")
+
+class Customer(Person):
+    def act(self):
+        print("Behaves like a customer in the mall.")
+
+# Runtime Polymorphism in action
+def main():
+    # Polymorphic behavior
+    person = Person()
+    person.act()  # Output: Person behaves in a general way.
+
+    person = Student()
+    person.act()  # Output: Behaves like a student at school.
+
+    person = Son()
+    person.act()  # Output: Behaves like a son at home.
+
+    person = Customer()
+    person.act()  # Output: Behaves like a customer in the mall.
+
+# Run the main function
+if __name__ == "__main__":
+    main()
